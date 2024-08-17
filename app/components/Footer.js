@@ -1,12 +1,12 @@
 import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa'; // Import icons from react-icons
 
 const Footer = () => (
-  <footer className="bg-pastelYellow text-white py-8 mt-12">
+  <footer className="bg-pgreen text-pyellow py-8 mt-12">
     <div className="max-w-7xl mx-auto px-4">
       <div className="text-center">
         <p className="text-lg font-medium">&copy; 2024 Sweet Shop. All rights reserved.</p>
         <div className="mt-4 flex justify-center space-x-6">
-          <a href="#" className="text-white hover:text-pastelMint transition-colors">
+          <a href="https://www.facebook.com/goldenpakkada/" className="text-white hover:text-pyellow transition-colors">
             <FaFacebookF size={24} />
           </a>
           <a href="#" className="text-white hover:text-pastelMint transition-colors">

@@ -13,6 +13,9 @@ module.exports = {
         pastelMint: '#a8e6cf',
         pastelYellow: '#ffd3b6',
         babyBlue: '#89CFF0',
+        pgreen: "#2D7D46",
+        pyellow: "#F4D35E",
+        pred:"#D0273E",
       },
       fontFamily: {
         sans: ['Roboto', 'sans-serif'],

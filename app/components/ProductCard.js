@@ -12,7 +12,7 @@ const ProductCard = ({ image, name, description, prices }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden hover:scale-105 transition-transform">
+    <div className="bg-white shadow-lg rounded-lg overflow-hidden gap-40 hover:scale-105 transition-transform w-80 flex-shrink-0">
       <img src={image} alt={name} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h3 className="text-xl font-semibold">{name}</h3>

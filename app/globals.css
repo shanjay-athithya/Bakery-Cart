@@ -3,7 +3,10 @@
 @tailwind utilities;
 
 /* global.css  */
+.body {
+ background-color: "#F4D35E";
 
+}
 
 .slider-container {
   position: relative;
@@ -20,4 +23,14 @@
   height: 100%;
   object-fit: cover;
 }
+
+/* Add this to your global stylesheet */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 

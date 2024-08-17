@@ -4,7 +4,7 @@ import React from "react";
 
 const AboutPage = () => {
   return (
-    <div className="relative bg-cover bg-center min-h-screen flex flex-col items-center justify-center py-16 px-4"
+    <div className="relative bg-cover bg-center min-h-screen flex flex-col items-center justify-center py-16 px-4 mt-6 md:mt-7 lg:mt-8"
          style={{ backgroundImage: "url('/images/hero1.jpg')" }}>
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
