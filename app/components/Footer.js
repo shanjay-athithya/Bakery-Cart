@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaChevronDown } from 'react-icons/fa'; 
+import { FaFacebookF, FaInstagram, FaTwitter, FaChevronDown, FaMapMarkerAlt } from 'react-icons/fa'; 
 
 const Footer = () => {
   const [quickLinksOpen, setQuickLinksOpen] = useState(false);
@@ -51,9 +51,10 @@ const Footer = () => {
             </div>
             <div className={`mt-4 ${contactInfoOpen ? 'block' : 'hidden'} md:block`}>
               <p className="mt-2 font-semibold">Address:
-                <a className='text-byellow'> 123 Sweet Shop,<br />
-                Dubai Kuruku Santhu,<br />
-                Dubai 12345
+                <a className='text-byellow'>No: 3 Golden Pakkada,<br />
+                Balamudali Street,<br />
+                Old Washermenpet,<br />
+                Chennai 600021
                 </a>
               </p>
               <p className="mt-2 font-semibold">Phone: <a href="tel:+971123456789" className="text-byellow hover:text-white">+971 123 456 789</a></p>
@@ -71,8 +72,8 @@ const Footer = () => {
             <a href="https://www.instagram.com/goldenpakkada/" className="text-byellow hover:text-white transition-colors">
               <FaInstagram size={24} />
             </a>
-            <a href="https://www.twitter.com/goldenpakkada/" className="text-byellow hover:text-white transition-colors">
-              <FaTwitter size={24} />
+            <a href="https://maps.app.goo.gl/nxGeNkrTwex1jF548" className="text-byellow hover:text-white transition-colors">
+              <FaMapMarkerAlt size={24} />
             </a>
           </div>
           <p className="text-lg font-medium">&copy; 2024 Golden Pakkada. All rights reserved.</p>
