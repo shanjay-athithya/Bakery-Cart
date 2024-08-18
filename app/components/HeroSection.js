@@ -41,7 +41,7 @@ const CustomSlider = () => {
   };
 
   return (
-    <section className="relative h-screen overflow-hidden mt-6 md:mt-7 lg:mt-8">
+    <section className="relative h-screen overflow-hidden mt-5 md:mt-5 lg:mt-5">
       <div className="absolute inset-0 flex">
         <div
           className="flex w-full h-full"
@@ -65,7 +65,7 @@ const CustomSlider = () => {
       <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60 z-10"></div>
       <div className="absolute inset-0 flex items-center justify-center z-20 text-center">
         <div className="text-center px-4">
-          <h1 className="text-6xl md:text-7xl font-extrabold text-pyellow leading-tight mb-4 drop-shadow-lg">
+          <h1 className="text-6xl md:text-7xl font-extrabold text-byellow leading-tight mb-4 drop-shadow-lg">
             Delight in Every Bite
           </h1>
           <p className="text-xl md:text-2xl font-light text-white mb-8 drop-shadow-md">
@@ -73,7 +73,7 @@ const CustomSlider = () => {
           </p>
           <button
             onClick={handleViewMenuClick}
-            className="px-8 py-4 bg-pyellow text-pgreen font-bold rounded-full shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-pastelPink focus:ring-opacity-50"
+            className="px-8 py-4 bg-byellow text-pred font-bold font-script rounded-full shadow-lg transition-transform transform hover:scale-110 focus:outline-none focus:ring-4 focus:ring-pastelPink focus:ring-opacity-50"
           >
             View Menu
           </button>

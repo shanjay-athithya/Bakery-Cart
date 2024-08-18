@@ -21,9 +21,9 @@ const Header = () => {
   };
 
   return (
-    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-pgreen shadow-lg' : 'bg-transparent'} ${isScrolled ? 'text-pyellow' : 'text-pgreen'}`}>
+    <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-pgreen shadow-lg' : 'bg-pgreen'} ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
       <nav className="max-w-7xl mx-auto p-5 flex justify-between items-center">
-        {/* Shop Name with Profile Picture */}
+        
         <div className="flex items-center space-x-4">
           {/* Profile Picture */}
           <img 
@@ -31,32 +31,32 @@ const Header = () => {
             alt="Profile Picture" 
             className="w-12 h-12 rounded-full object-cover" // Adjust the size as needed
           />
-          <div className="text-2xl font-script">Golden Pakkada</div>
+          <div className="text-2xl font-bold font-script">Golden Pakkada</div>
         </div>
         
-        <div className="hidden md:flex space-x-6">
-          <Link href="/" className={`hover:text-pyellow transition-colors flex items-center ${isScrolled ? 'text-white' : 'text-pgreen'}`}>
+        <div className="hidden md:flex space-x-6 font-semibold">
+          <Link href="/" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
             <FiHome className="mr-2" /> Home
           </Link>
-          <Link href="/menu" className={`hover:text-pyellow transition-colors flex items-center ${isScrolled ? 'text-white' : 'text-pgreen'}`}>
+          <Link href="/menu" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
             <FiCoffee className="mr-2" /> Menu
           </Link>
-          <Link href="/about" className={`hover:text-pyellow transition-colors flex items-center ${isScrolled ? 'text-white' : 'text-pgreen'}`}>
+          <Link href="/about" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
             <FiInfo className="mr-2" /> About Us
           </Link>
-          <Link href="/contact" className={`hover:text-pyellow transition-colors flex items-center ${isScrolled ? 'text-white' : 'text-pgreen'}`}>
+          <Link href="/contact" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
             <FiMail className="mr-2" /> Contact
           </Link>
         </div>
         
-        <div className="md:hidden">
-          <button onClick={toggleMenu} className={`text-3xl focus:outline-none ${isScrolled ? 'text-white' : 'text-pastelYellow'}`}>
+        <div className="md:hidden font-semibold">
+          <button onClick={toggleMenu} className={`text-3xl mt-3 focus:outline-none ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
             {isMenuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
       </nav>
       {/* Mobile Menu */}
-      <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-pastelPink text-white`}>
+      <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-byellow text-pred font-bold`}>
         <nav className="flex flex-col items-center py-4 space-y-4">
           <Link href="/" className="hover:text-pastelYellow transition-colors flex items-center" onClick={toggleMenu}>
             <FiHome className="mr-2" /> Home

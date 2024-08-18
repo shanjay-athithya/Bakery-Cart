@@ -8,6 +8,16 @@
 
 }
 
+
+.product-card {
+  width: 16rem; 
+  height: 28rem; 
+  padding: 2rem; 
+}
+.product-card img {
+  height: 8rem; /* Adjust as needed */
+}
+
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -24,13 +34,68 @@
   object-fit: cover;
 }
 
-/* Add this to your global stylesheet */
-.no-scrollbar::-webkit-scrollbar {
+/* Custom scrollbar hiding */
+.scrollbar-hidden::-webkit-scrollbar {
   display: none;
 }
-.no-scrollbar {
+
+.scrollbar-hidden {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+
+body {
+  font-family: 'Cinzel', serif;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+h3 {
+  font-family: 'Garamond', serif;
+}
+
+h4 {
+  font-family: 'Trajan Pro', serif;
+}
+
+h5 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h6 {
+  font-family: 'Alex Brush', cursive;
+}
+
+p {
+  font-family: 'Bodoni Moda', serif;
+}
+
+.goudy {
+  font-family: 'Goudy Old Style', serif;
+}
+
+.blackletter {
+  font-family: 'Blackletter', sans-serif;
+}
+
+.didot {
+  font-family: 'Didot', serif;
+}
+
+.sans {
+  font-family: 'Roboto', sans-serif;
+}
+
+.script {
+  font-family: 'Dancing Script', cursive;
+}
+
 
 
