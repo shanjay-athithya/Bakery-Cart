@@ -57,7 +57,7 @@ const Header = () => {
       </nav>
       {/* Mobile Menu */}
       <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'} bg-byellow text-pred font-bold`}>
-        <nav className="flex flex-col items-center py-4 space-y-4">
+        <nav className="flex flex-col items-center font-bold mt-2 py-4 space-y-4">
           <Link href="/" className="hover:text-pastelYellow transition-colors flex items-center" onClick={toggleMenu}>
             <FiHome className="mr-2" /> Home
           </Link>

@@ -19,18 +19,25 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
+    <div
+      className="flex justify-center items-center min-h-screen bg-cover bg-center"
+      style={{
+        backgroundImage: `url('/images/pattern.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="bg-white shadow-lg rounded-lg p-8 max-w-lg w-full space-y-6"
+        className="bg-pgreen bg-opacity-90 shadow-lg rounded-lg p-8 max-w-lg w-full space-y-6"
       >
-        <h2 className="text-3xl font-semibold text-center text-gray-800">Get in Touch</h2>
+        <h2 className="text-3xl font-semibold text-center font-script text-byellow">Get in Touch</h2>
 
         <div className="space-y-4">
           <div>
             <label
               htmlFor="name"
-              className="block text-gray-700 text-sm font-medium mb-2"
+              className="block text-byellow text-sm font-medium mb-2"
             >
               Name
             </label>
@@ -39,7 +46,7 @@ export default function ContactForm() {
               type="text"
               placeholder="Your Name"
               {...register("name", { required: true, maxLength: 80 })}
-              className={`w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
+              className={`w-full border border-byellow rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
                 errors.name ? "border-red-500" : ""
               }`}
             />
@@ -49,7 +56,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="email"
-              className="block text-gray-700 text-sm font-medium mb-2"
+              className="block text-byellow text-sm font-medium mb-2"
             >
               Email
             </label>
@@ -58,7 +65,7 @@ export default function ContactForm() {
               type="email"
               placeholder="Your Email"
               {...register("email", { required: true })}
-              className={`w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
+              className={`w-full border border-byellow rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
                 errors.email ? "border-red-500" : ""
               }`}
             />
@@ -68,7 +75,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="phone"
-              className="block text-gray-700 text-sm font-medium mb-2"
+              className="block text-byellow text-sm font-medium mb-2"
             >
               Phone Number
             </label>
@@ -77,7 +84,7 @@ export default function ContactForm() {
               type="tel"
               placeholder="Your Phone Number"
               {...register("phone", { required: true })}
-              className={`w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
+              className={`w-full border border-byellow rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
                 errors.phone ? "border-red-500" : ""
               }`}
             />
@@ -87,7 +94,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="message"
-              className="block text-gray-700 text-sm font-medium mb-2"
+              className="block text-byellow text-sm font-medium mb-2"
             >
               Message
             </label>
@@ -96,7 +103,7 @@ export default function ContactForm() {
               placeholder="Your Message"
               rows={4}
               {...register("message", { required: true })}
-              className={`w-full border border-gray-300 rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
+              className={`w-full border border-byellow rounded-lg py-2 px-3 text-gray-700 focus:outline-none focus:ring-2 focus:ring-pastelYellow ${
                 errors.message ? "border-red-500" : ""
               }`}
             />
@@ -106,7 +113,7 @@ export default function ContactForm() {
 
         <button
           type="submit"
-          className="w-full bg-pastelYellow text-pastelPink py-2 px-4 rounded-lg font-semibold hover:bg-pastelMint transition-colors"
+          className="w-full bg-byellow text-pgreen py-2 px-4 rounded-lg font-semibold hover:bg-pastelMint transition-colors"
         >
           Send Inquiry
         </button>

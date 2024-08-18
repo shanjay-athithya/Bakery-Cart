@@ -6,7 +6,7 @@ const ShopExcellence = () => (
           What we offer is not just a product, but an experience.
         </p>
         <p className="text-2xl font-script mb-10">
-          Pure, Authentic & Sustainable
+          Tradtitonal & Authentic
         </p>
         <p className="text-lg font-light text-pgreen">
           Indulge in the finest delicacies that resonate with tradition, quality, and sustainability. Our offerings are crafted with the utmost care, ensuring that every bite is a testament to our commitment to excellence.
