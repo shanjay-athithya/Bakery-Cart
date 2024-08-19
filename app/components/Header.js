@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FiMenu, FiX, FiHome, FiCoffee, FiInfo, FiMail, FiLogIn, FiLogOut } from 'react-icons/fi';
+import { FiMenu, FiX, FiHome, FiCoffee, FiInfo, FiMail, FiLogIn, FiLogOut, FiShoppingCart } from 'react-icons/fi'; // Import cart icon
 import { signOut, onAuthStateChanged } from 'firebase/auth';
 import { auth } from '../firebase';
 import SignInForm from './SignInForm'; // Import the SignInForm component
@@ -12,6 +12,8 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSignInFormOpen, setIsSignInFormOpen] = useState(false);
   const [user, setUser] = useState(null);
+
+  const adminEmail = "shanjayathithya2004@gmail.com"; // Define your admin email
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,6 +70,18 @@ const Header = () => {
           <Link href="/contact" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
             <FiMail className="mr-2" /> Contact
           </Link>
+
+          {/* Cart Link */}
+          <Link href="/cart" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
+            <FiShoppingCart className="mr-2" /> Cart
+          </Link>
+
+          {user?.email === adminEmail && (
+            <Link href="/admin" className={`hover:text-white transition-colors flex items-center ${isScrolled ? 'text-byellow' : 'text-byellow'}`}>
+              <FiLogIn className="mr-2" /> Admin
+            </Link>
+          )}
+
           {!user ? (
             <button 
               onClick={() => setIsSignInFormOpen(true)} 
@@ -110,6 +124,18 @@ const Header = () => {
           <Link href="/contact" className="hover:text-pastelYellow transition-colors flex items-center" onClick={toggleMenu}>
             <FiMail className="mr-2" /> Contact
           </Link>
+
+          {/* Cart Link */}
+          <Link href="/cart" className="hover:text-pastelYellow transition-colors flex items-center" onClick={toggleMenu}>
+            <FiShoppingCart className="mr-2" /> Cart
+          </Link>
+
+          {user?.email === adminEmail && (
+            <Link href="/admin" className="hover:text-pastelYellow transition-colors flex items-center" onClick={toggleMenu}>
+              <FiLogIn className="mr-2" /> Admin
+            </Link>
+          )}
+
           {!user ? (
             <button 
               onClick={() => {

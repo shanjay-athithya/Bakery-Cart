@@ -3,6 +3,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics, isSupported } from "firebase/analytics";
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore'; // Import Firestore
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -16,6 +17,9 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+// Initialize Firestore
+const db = getFirestore(app); // Initialize Firestore
 
 // Initialize Analytics if supported
 let analytics;
@@ -31,4 +35,4 @@ if (typeof window !== 'undefined') { // Ensure this code runs only on the client
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
 
-export { auth, provider, analytics };
+export { db, auth, provider, analytics };
