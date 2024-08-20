@@ -9,7 +9,7 @@ const AdminPage = () => {
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [newProduct, setNewProduct] = useState({
     name: '',
-    type: 'Savouries',
+    type: 'Sweets',
     description: '',
     image: '',
     price: '',
